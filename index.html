@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moh Hamdani Mufti — Offensive Security Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-content reveal">
+        <div class="hero-tag">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Offensive Security Researcher</span>
+        </div>
+        <h1 class="hero-name">Moh Hamdani<br /><span class="accent">Mufti</span></h1>
+        <p class="hero-location">
+          <i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia
+        </p>
+        <p class="hero-desc">
+          Mahasiswa aktif Universitas Negeri Jakarta dengan minat kuat di bidang Offensive Security.<br />
+          Bug bounty hunter aktif di HackerOne &amp; Bugcrowd.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="#experience" class="btn btn-outline">
+            <i class="fa-solid fa-briefcase"></i> View Work
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Bug Reports</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">recon.sh</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">$</span> <span class="t-cmd">nmap -sV target.com</span></p>
+            <p class="t-out">Starting Nmap scan...</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">ffuf -w wordlist.txt -u /FUZZ</span></p>
+            <p class="t-out">Found: /api/v1/internal</p>
+            <p class="t-out">Found: /package.json</p>
+            <p><span class="t-prompt">$</span> <span class="t-cmd">burpsuite --target zalora.com</span></p>
+            <p class="t-out t-success">WAF Bypass successful ✓</p>
+            <p class="t-out t-success">CSRF exploit triggered ✓</p>
+            <p><span class="t-prompt">$</span> <span class="t-cursor">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary-section" id="summary">
+      <div class="container">
+        <div class="summary-card reveal">
+          <div class="summary-icon">
+            <i class="fa-solid fa-user-secret"></i>
+          </div>
+          <div class="summary-text">
+            <h2>About Me</h2>
+            <p>
+              Mahasiswa aktif Universitas Negeri Jakarta dengan minat kuat di bidang Offensive Security Researcher.
+              Berpengalaman aktif dalam bug bounty seperti hackerone dan bugcrowd.
+              Terbiasa melakukan eksplorasi mandiri secara bertahap untuk membangun pemahaman yang kuat,
+              memiliki kemampuan dalam web application, API Analysis, logic flaws, dan problem solving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-sub">Bug bounty reports &amp; security findings</p>
+        </div>
+        <div class="experience-grid">
+
+          <div class="exp-card reveal">
+            <div class="exp-card-inner">
+              <div class="exp-meta">
+                <div class="exp-badges">
+                  <span class="badge badge-company">Zalora</span>
+                </div>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Februari 2026 &middot; Remote</span>
+              </div>
+              <h3 class="exp-title">WAF Bypass &amp; Information Disclosure</h3>
+              <ul class="exp-list">
+                <li>Berhasil mengidentifikasi IP Origin Server melalui reconnaissance untuk melakukan bypass total terhadap CloudFront WAF pada sistem internal Zalora.</li>
+                <li>Menemukan eksploitasi pada file package.json yang membocorkan metadata internal, daftar dependensi, dan PII karyawan.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Reconnaissance</span>
+                <span>WAF Bypass</span>
+                <span>Information Disclosure</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card reveal">
+            <div class="exp-card-inner">
+              <div class="exp-meta">
+                <div class="exp-badges">
+                  <span class="badge badge-company">Zalora</span>
+                </div>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Januari 2026 &middot; Remote</span>
+              </div>
+              <h3 class="exp-title">CSRF to Unauthorized Payment Takeover</h3>
+              <ul class="exp-list">
+                <li>Berhasil mengeksploitasi Cross-Site Request Forgery pada beberapa authenticated endpoints seperti pembuatan pesanan COD dan unlink pembayaran gopay tanpa interaksi user di API zalora.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>CSRF</span>
+                <span>API Security</span>
+                <span>Authentication Bypass</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card reveal">
+            <div class="exp-card-inner">
+              <div class="exp-meta">
+                <div class="exp-badges">
+                  <span class="badge badge-company">Yelp</span>
+                </div>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Mei 2025 &middot; Remote</span>
+              </div>
+              <h3 class="exp-title">Exposure of Bugsnag API Key</h3>
+              <ul class="exp-list">
+                <li>Menemukan Bugsnag API Key yang ter ekspos secara publik di source code client side situs www.yelp.com.</li>
+                <li>Menunjukan bahwa API Key tersebut dapat disalah gunakan untuk menyuntikan log error palsu ke sistem pemantauan internal milik yelp tanpa otentikasi.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>API Key Exposure</span>
+                <span>Source Code Analysis</span>
+                <span>Bugsnag</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card reveal">
+            <div class="exp-card-inner">
+              <div class="exp-meta">
+                <div class="exp-badges">
+                  <span class="badge badge-company">X (Twitter)</span>
+                </div>
+                <span class="exp-date"><i class="fa-regular fa-calendar"></i> Jul 2025 &middot; Remote</span>
+              </div>
+              <h3 class="exp-title">Protected Account Enumeration</h3>
+              <ul class="exp-list">
+                <li>Menemukan bahwa attacker tetap bisa mendapatkan data dari akun dengan status protected melalui endpoint unfollow/destroy.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>IDOR</span>
+                <span>Account Enumeration</span>
+                <span>Logic Flaw</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-sub">Technical capabilities &amp; tools</p>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Security Testing</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Web Application</span>
+              <span class="skill-badge">API Security Testing</span>
+              <span class="skill-badge">Logic Flaws Analysis</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>Technical Analysis</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">HTTP Request Analysis</span>
+              <span class="skill-badge">Header &amp; Cookie</span>
+              <span class="skill-badge">Token Analysis</span>
+              <span class="skill-badge">Reconnaissance</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h3>Tools</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Burp Suite</span>
+              <span class="skill-badge">Censys</span>
+              <span class="skill-badge">Shodan</span>
+              <span class="skill-badge">Ffuf</span>
+              <span class="skill-badge">Nmap</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Programming</h3>
+            <div class="skill-badges">
+              <span class="skill-badge">Python Automation</span>
+              <span class="skill-badge">JavaScript (Basic)</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="proficiency-bars reveal">
+          <h3 class="bars-title">Proficiency</h3>
+          <div class="bar-item">
+            <div class="bar-label"><span>Web Application Testing</span><span>90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>API Security Analysis</span><span>85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Reconnaissance</span><span>88%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Logic Flaw Detection</span><span>82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-label"><span>Python / Scripting</span><span>60%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-sub">Professional credentials &amp; achievements</p>
+        </div>
+        <div class="cert-grid">
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="cert-body">
+              <h3>Sertifikat BSSN VVIP-Program 2025</h3>
+              <p>Badan Siber dan Sandi Negara</p>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="cert-body">
+              <h3>Google Cybersecurity Professional Certificate</h3>
+              <p>Google via Coursera</p>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-badge">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-sub">Feel free to reach out</p>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-card reveal">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <a href="mailto:hamdanimufti1@gmail.com" class="contact-value">hamdanimufti1@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+6281939198806" class="contact-value">+62-819-3919-8806</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Jakarta, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon">
+              <i class="fa-solid fa-bug"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Bug Bounty</span>
+              <span class="contact-value">HackerOne &amp; Bugcrowd</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">
+          </div>
+          <p class="footer-copy">&copy; 2025 Moh Hamdani Mufti. All rights reserved.</p>
+          <p class="footer-role">Offensive Security Researcher</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
